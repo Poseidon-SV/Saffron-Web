@@ -54,7 +54,7 @@ class Footer extends HTMLElement {
           <form action="https://formsubmit.co/saffron.ai.tech@gmail.com" method="post">
             <input type="text" name="_honey" style="display: none;">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+            <input type="hidden" name="_next" value="https://saffron.fr.to/success.html">
 
             <input type="email" name="Email" placeholder="Email" required>
             <input type="text" name="Subject" value="Newsletter" style="display: none;">
