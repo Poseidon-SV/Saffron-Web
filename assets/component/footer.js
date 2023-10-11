@@ -4,6 +4,7 @@ class Footer extends HTMLElement {
     }
     connectedCallback() {
       this.innerHTML = `
+  <div id="preloader"></div>
       <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
