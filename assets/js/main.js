@@ -159,17 +159,12 @@
   /**
    * Preloader
    */
-  // let preloader = select('#preloader');  // Was not stopping in custom component 
-  // if (preloader) {
-  //   window.addEventListener('load', () => {
-  //     preloader.remove()
-  //   });
-  // }
-  setTimeout(() => {
   let preloader = select('#preloader');
-    if (preloader) {
-      preloader.remove()}
-}, 1000);
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove()
+    });
+  }
 
   /**
    * Porfolio isotope and filter
