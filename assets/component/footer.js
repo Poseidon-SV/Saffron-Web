@@ -15,8 +15,7 @@ class Footer extends HTMLElement {
               <!-- <h3 style="color: #FF914D">SAFFRON</h3> -->
               <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" style="max-width: 50%;"></a>
               <p>
-                22 Gautam Nagar <br>
-                New Delhi, India <br><br>
+                <br>
                 <strong>Phone:</strong> +91 9212172636 <br>
                 <strong>Email:</strong> saffron.ai.tech@gmail.com <br>
               </p>
