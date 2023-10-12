@@ -2,7 +2,6 @@
 <html lang="en">
   
   <script src="/assets/component/head.js" type="text/javascript" defer></script>
-  <script src="/assets/component/header.js" type="text/javascript" defer></script>
   <script src="/assets/component/footer.js" type="text/javascript" defer></script>
   
   <head>
@@ -18,7 +17,41 @@
   </head>
 
 <body>
-  <header-component></header-component>
+  <topbar-component></topbar-component>
+  <!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+        <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+        <li><a class="nav-link scrollto" href="index.html#services" name="services">Services</a></li>
+        <li><a class="nav-link scrollto " href="index.html#portfolio">Portfolio</a></li>
+        <li><a class="nav-link scrollto" href="index.html#faq-section">FAQs</a></li>
+        <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+<main id="main">
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+  <div class="container">
+
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li>Portfolio Details - Robot Arm with Grippers</li>
+    </ol>
+    <h2>Portfolio Details - Robot Arm with Grippers</h2>
+
+  </div>
+</section><!-- End Breadcrumbs -->
 
  <!-- ======= Portfolio Details Section ======= -->
   <section id="portfolio-details" class="portfolio-details">

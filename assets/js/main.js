@@ -247,4 +247,60 @@ function faqFunc() {
 }
 btns.forEach((el) => el.addEventListener("click", faqFunc));
 
+
+class Topbar extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
+  
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope-fill"></i><a href="mailto:saffron.ai.tech@gmail.com">saffron.ai.tech@gmail.com</a>
+          <i class="bi bi-phone-fill phone-icon"></i><a>+91 9212172636</a>
+        </div>
+        <div class="social-links d-none d-md-block">
+        <a href="https://github.com/Poseidon-SV" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/shubham-verma-72b52a217/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://instagram.com/20shubh01?igshid=MzMyNGUyNmU2YQ==" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </section>   
+   `;
+}
+}
+
+customElements.define('topbar-component', Topbar);
+
+
+  class Breadcrumbs extends HTMLElement {
+    constructor() {
+      super();
+    }
+    connectedCallback() {
+      this.innerHTML = `
+  <main id="main">
+  
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+  
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>Portfolio Details</li>
+      </ol>
+      <h2>Portfolio Details</h2>
+  
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+    `;
+  }
+}
+
+customElements.define('breadcrumbs-component', Breadcrumbs);
+
 })()
