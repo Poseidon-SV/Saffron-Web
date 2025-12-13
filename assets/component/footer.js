@@ -66,7 +66,7 @@ class Footer extends HTMLElement {
 
     <div class="container">
       <div class="copyright">
-        &copy; 2025 <strong><span style="color: #FF914D">VERHAM ROBOTICS</span></strong>. All Rights Reserved
+        &copy; 2025 <strong><span style="color: #f76f34">VERHAM ROBOTICS</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         Designed by <a href="index.html">Shubham Verma</a>
