@@ -85,6 +85,7 @@
           <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
           <li><a class="nav-link scrollto" href="#partners">Partners</a></li>
           <li><a class="nav-link scrollto" href="#careers">Careers</a></li>
+          <li><a class="nav-link scrollto" href="service-3DPrinting.html">3D Printing</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -223,7 +224,7 @@
                   <h2>Morph T-1700</h2>
                   <p><strong>Status:</strong> Development Complete</p>
                   <p>First-generation transformable platform combining aerial drone capabilities with ground mobility.</p>
-                  <u class="learn-more"> (learn-more)</u>
+                  <u class="learn-more"> (learn-more ⓘ)</u>
                 </div>
               </div>
             </a>
@@ -245,7 +246,7 @@
                   <h2>Morph T-1280</h2>
                   <p><strong>Status:</strong> Active Development</p>
                   <p>Advanced multi-mode platform with enhanced sensor fusion and improved transformation mechanics.</p>
-                  <u class="learn-more"> (learn-more)</u>
+                  <u class="learn-more"> (learn-more ⓘ)</u>
                 </div>
               </div>
             </a>
@@ -267,7 +268,7 @@
                   <h2>Morph T-1280 SM</h2>
                   <p><strong>Status:</strong> Active Development</p>
                   <p>Lighter, energy-efficient variant optimized for endurance and agile field operations.</p>
-                  <u class="learn-more"> (learn-more)</u>
+                  <u class="learn-more"> (learn-more ⓘ)</u>
                 </div>
               </div>
             </a>
@@ -366,41 +367,56 @@
 
         <div class="row justify-content-center">
 
-          <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up">
+          <div class="col-lg-6 col-md-6 text-center mt-4" data-aos="fade-up">
             <a href="https://home.iitd.ac.in/" target="_blank" class="partner-box-link">
               <div class="box partner-box">
                 <img src="assets/img/Partners logo/IITD.png" class="partner-logo" alt="IIT Delhi Logo">
                 <h4>IIT Delhi</h4>
-                <p>IIT Delhi provides a strong innovation environment that enables high-end research, technical
+                <p><b style="color: #b83c06;">IIT Delhi </b>provides a strong innovation environment that enables high-end research, technical
                   collaboration,
-                  and access to a broad ecosystem of experts and resources.</p>
+                  and access to a broad ecosystem of experts and resources to expand technical capabilities.</p>
               </div>
             </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 text-center mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-6 col-md-6 text-center mt-4" data-aos="fade-up" data-aos-delay="150">
             <a href="https://ihfc.co.in/" target="_blank" class="partner-box-link">
               <div class="box partner-box">
                 <img src="assets/img/Partners logo/IHFC.png" class="partner-logo" alt="IHFC Logo">
                 <h4>IHFC - IIT Delhi</h4>
-                <p>The Innovation and Incubation Hub for Cobotics supports our journey through the READY Program,
+                <p>The <b style="color: #b83c06;">I-Hub Foundation for Cobotics </b> supports our journey through the READY Program,
                   offering
                   incubation, robotics expertise, and strategic guidance for product development.</p>
               </div>
             </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 text-center mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="250">
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-6 col-md-6 text-center mt-4 " data-aos="fade-up" data-aos-delay="250">
             <a href="https://makerspace.iitd.ac.in/" target="_blank" class="partner-box-link">
               <div class="box partner-box">
                 <img src="assets/img/Partners logo/Makerspace.png" class="partner-logo" alt="Maker Space Logo">
                 <h4>Maker Space - IIT Delhi</h4>
-                <p>The Maker Space equips us with advanced fabrication tools, prototyping facilities, and hands-on
-                  engineering
+                <p>The <b style="color: #b83c06;">Maker Space </b>equips us with advanced fabrication tools, prototyping facilities, and hands-on
+                  engineering on machining, 3D printing, providing critical
                   support that accelerates rapid design and testing.</p>
               </div>
             </a>
           </div>
+
+          <div class="col-lg-6 col-md-6 text-center mt-4" data-aos="fade-up" data-aos-delay="250">
+            <a href="https://icreate.org.in/" target="_blank" class="partner-box-link">
+              <div class="box partner-box">
+                <img src="assets/img/Partners logo/iCreate.png" class="partner-logo" alt="iCreate Logo" style="background: #ffffff;">
+                <h4>iCreate - Ahmedabad</h4>
+                <p><b style="color: #b83c06;">iCreate</b> has supported our innovation journey through expert mentorship, structured programs, 
+                  and a collaborative ecosystem, enabling rapid prototyping and refinement of our robotics solutions.</p>
+              </div>
+            </a>
+          </div>          
 
         </div>
 
@@ -508,7 +524,7 @@
               <!-- Disable Captcha -->
               <input type="hidden" name="_captcha" value="false">
 
-              <input type="hidden" name="_next" value="https://verham/success.html">
+              <input type="hidden" name="_next" id="next-url" value="">
 
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -597,7 +613,7 @@
             <form action="https://formsubmit.co/20shubh01@gmail.com" method="post">
               <input type="text" name="_honey" style="display: none;">
               <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://verham.robotics/success.html">
+              <input type="hidden" name="_next" id="next-url" value="">
               <input type="email" name="Email" placeholder="Email" required>
               <input type="text" name="Subject" value="Newsletter Subscription" style="display: none;">
               <input type="submit" value="Subscribe">

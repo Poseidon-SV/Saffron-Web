@@ -303,3 +303,5 @@ customElements.define('topbar-component', Topbar);
 customElements.define('breadcrumbs-component', Breadcrumbs);
 
 })()
+
+document.getElementById('next-url').value = window.location.origin + '/success.html';

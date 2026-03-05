@@ -69,6 +69,7 @@ class Header extends HTMLElement {
           <li><a class="nav-link scrollto" href="index.html#projects">Projects</a></li>
           <li><a class="nav-link scrollto" href="index.html#partners">Partners</a></li>
           <li><a class="nav-link scrollto" href="index.html#careers">Careers</a></li>
+          <li><a class="nav-link scrollto" href="service-3DPrinting.html">3D Printing</a></li>
           <li><a class="nav-link scrollto " href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

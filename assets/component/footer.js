@@ -43,7 +43,8 @@ class Footer extends HTMLElement {
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.html#products">Transformable Robots</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="index.html#vision">Autonomous Systems</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">Verham AI</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3d-printing.html">3D Printing</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">Verham AI</a></li> -->
             </ul>
           </div>
 
@@ -53,7 +54,7 @@ class Footer extends HTMLElement {
             <form action="https://formsubmit.co/20shubh01@gmail.com" method="post">
               <input type="text" name="_honey" style="display: none;">
               <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://verham.robotics/success.html">
+              <input type="hidden" name="_next" id="next-url" value="">
               <input type="email" name="Email" placeholder="Email" required>
               <input type="text" name="Subject" value="Newsletter Subscription" style="display: none;">
               <input type="submit" value="Subscribe">
