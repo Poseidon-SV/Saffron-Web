@@ -10,19 +10,19 @@ class Head extends HTMLElement {
 
   <title>Verham Robotics</title>
   <meta content="Building the future of transforming multi-mode robotics. Developing Morph T-series platforms for defense, inspection, and autonomous operations." name="description">
-  <meta content="Robotics, Transforming Robots, Morph T-1280, Morph T-1700, Autonomous Robots, Defense Robotics, AI Robotics" name="keywords">
+  <meta content="Robotics, Transforming Robots, Morph-BT, Morph T-1700, Autonomous Robots, Defense Robotics, AI Robotics" name="keywords">
   <meta name="author" content="Shubham Verma">
   <meta name="robots" content="index, follow">
   <meta name="twitter:image:src" content="https://github.com/Poseidon-SV/Saffron-Web/blob/main/verham-logo.png?raw=true">
   <meta name="apple-itunes-app" content="app-id=1477376905, app-argument=https://github.com/Poseidon-SV/Saffron-Web/blob/main/verham-logo.png?raw=true">
   <meta property="og:title" content="Verham Robotics">
-  <meta property="og:url" content="https://verham.bot.nu/">
+  <meta property="og:url" content="https://verhamrobotics.com/">
   <meta property="og:image" content="https://github.com/Poseidon-SV/Saffron-Web/blob/main/verham-logo.png?raw=true">
   <meta property="og:description" content="Verham Robotics • Engineering the Future of Autonomous Systems">
   <meta property="og:image:height" content="600">
   <meta property="og:image:width" content="600">
 
-  <link rel="canonical" href="https://verham.bot.nu/">
+  <link rel="canonical" href="https://verhamrobotics.com/">
   <link rel="fluid-icon" href="https://github.com/Poseidon-SV/Saffron-Web/blob/main/verham-logo.png?raw=true" title="Verham Robotics">
 
   <!-- Favicons -->
@@ -55,29 +55,26 @@ class Header extends HTMLElement {
     this.innerHTML = `
 
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo"><img src="assets/img/verham-logo.png" alt="" class="img-fluid"></a>
-
-      <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li><a class="nav-link scrollto" href="index.html#vision">Vision</a></li>
-          <li><a class="nav-link scrollto" href="index.html#products">Products</a></li>
+          <li><a class="nav-link scrollto active" href="index.html#products">Products</a></li>
           <li><a class="nav-link scrollto" href="index.html#projects">Projects</a></li>
           <li><a class="nav-link scrollto" href="index.html#partners">Partners</a></li>
           <li><a class="nav-link scrollto" href="index.html#careers">Careers</a></li>
           <li><a class="nav-link scrollto" href="service-3DPrinting.html">3D Printing</a></li>
-          <li><a class="nav-link scrollto " href="index.html#contact">Contact</a></li>
+          <li><a class="nav-link profile-nav-link" href="shubham-verma.html" style="color: #f76f34;">Shubham Verma</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact"><span style="color: #f76f34;">&lt&lt</span>GET IN TOUCH<span
+                style="color: #f76f34;">&gt&gt</span></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-    </div>
-  </header>
+      
     `;
+
+    // Remove the wrapper, leaving the menu directly inside .navbar. header-component, footer-component { display: contents; } FOR anything interactive 
+    this.replaceWith(...this.childNodes);
   }
 }
 

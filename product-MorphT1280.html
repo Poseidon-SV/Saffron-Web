@@ -5,135 +5,129 @@
 <script src="/assets/component/footer.js" type="text/javascript" defer></script>
 
 <head>
-  <title>Morph T-1280 - Verham Robotics</title>
+  <title>Morph-BT - Verham Robotics</title>
 
-  <!-- Favicons -->
   <link href="assets/img/verham-icon.png" rel="icon">
   <link href="assets/img/verham-icon.png" rel="apple-touch-icon">
   <head-component></head-component>
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <topbar-component></topbar-component>
+  <section id="topbar">
+    <topbar-component></topbar-component>
+  </section>
 
-  <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo"><img src="assets/img/verham-logo.png" alt="" class="img-fluid"></a>
-
+      <div class="d-flex align-items-center">
+        <a href="index.html" class="logo"><img src="assets/img/verham-logo.png" alt="" class="img-fluid"></a>
+        </div>
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#vision">Vision</a></li>
-          <li><a class="nav-link scrollto active" href="index.html#products">Products</a></li>
-          <li><a class="nav-link scrollto" href="index.html#projects">Projects</a></li>
-          <li><a class="nav-link scrollto" href="index.html#partners">Partners</a></li>
-          <li><a class="nav-link scrollto" href="index.html#careers">Careers</a></li>
-          <li><a class="nav-link scrollto" href="service-3DPrinting.html">3D Printing</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <header-component></header-component>
       </nav>
-
     </div>
   </header>
 
   <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Product Details - Morph T-1280</li>
-        </ol>
-        <h2>Morph T-1280</h2>
-
-      </div>
-    </section>
-
-    <!-- ======= Portfolio Details Section ======= -->
     <section id="product-details" class="product-details">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="product-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div>
-                  <video src="assets/vid/morph_T-1280.mp4"
-                    autoplay loop muted playsinline></video>
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-7" style="padding: 1%">
+            <div class="product-details-slider">
+              <video src="assets/vid/morph_T-1280.mp4" autoplay loop muted playsinline></video>
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="product-info">
-              <h3>Morph T-1280</h3>
-              <ul>
-                <li><strong>Category</strong>: Transformable Robotics</li>
-                <li><strong>Status</strong>: Under Active Development</li>
-                <li><strong>Pre-Incubation</strong>: IHFC, IIT Delhi</li>
-              </ul>
-            </div>
-
+          <div class="col-lg-5">
             <div class="product-description">
-              <p>
-                Morph T-1280 is the next evolution in multi-mode autonomous robotics. Designed for demanding missions,
-                it combines
-                ground mobility with aerial capability in a single compact platform. Lightweight transformation
-                mechanics, improved
-                stability, and enhanced embedded control make it the most advanced version in the Morph series.
-              </p>
-
+              <p class="product-label">Transformable Robotics</p>
+              <h2>Morph-BT</h2>
+              <span class="product-status">Under Active Development</span>
+              <p class="product-lede">Morph-BT is the next evolution in multi-mode autonomous robotics. Designed for
+                demanding missions, it combines ground mobility with aerial capability in a single compact platform.
+                Lightweight transformation mechanics, improved stability, and enhanced embedded control make it the most
+                advanced version in the Morph series.</p>
             </div>
           </div>
-          <div>
-            <div>
-              <h3>Key Features</h3>
-              <ol>
-                <li><strong>Seamless Mode Switching:</strong> Rapid transformation between terrestrial and aerial mode
-                  for hybrid deployment.</li>
-                <li><strong>Enhanced Power System:</strong> More efficient energy utilization for longer missions.</li>
-                <li><strong>Improved Structural Rigidity:</strong> Reinforced frame for field durability and payload
-                  stability.</li>
-                <li><strong>Advanced Sensor Suite:</strong> Upgraded LiDAR, TOF, and IMU integration for accurate
-                  real-world mapping.</li>
-                <li><strong>AI-Driven Control:</strong> Intelligent mode selection, stabilization, and navigation
-                  pipeline.</li>
-              </ol>
-
-              <h3>Applications</h3>
-              <ul>
-                <li><strong>Search & Rescue:</strong> Access hard-to-reach zones through combined flight and ground
-                  mobility.</li>
-                <li><strong>Defense & Surveillance:</strong> Stealth movement, low-altitude recon, and terrain-adaptive
-                  deployment.</li>
-                <li><strong>Industrial Inspection:</strong> Hybrid access to rooftops, tight corridors, and complex
-                  structures.</li>
-                <li><strong>R&D Platform:</strong> Modular architecture ideal for experimental robotics and AI testing.
-                </li>
-              </ul>
-
-              Morph T-1280 represents the future direction of Verham Robotics - compact, intelligent, and mission-ready
-              hybrid systems.
-            </div>
-          </div>
-
         </div>
-    </section>
 
+        <div class="product-info" aria-label="Product information">
+          <div class="product-info-row">
+            <div class="product-info-label">Category</div>
+            <div class="product-info-value">Transformable Robotics</div>
+          </div>
+          <div class="product-info-row">
+            <div class="product-info-label">Status</div>
+            <div class="product-info-value">Under Active Development</div>
+          </div>
+          <div class="product-info-row">
+            <div class="product-info-label">Pre-Incubation</div>
+            <div class="product-info-value">IHFC, IIT Delhi</div>
+          </div>
+        </div>
+
+        <div class="product-description details-section">
+          <div>
+            <h3>Key Features</h3>
+            <ul>
+              <li>
+                <div class="item-title">Seamless Mode Switching</div>
+                <div class="item-body">Rapid transformation between terrestrial and aerial modes for hybrid deployment.
+                </div>
+              </li>
+              <li>
+                <div class="item-title">Enhanced Power System</div>
+                <div class="item-body">More efficient energy utilization for longer missions.</div>
+              </li>
+              <li>
+                <div class="item-title">Improved Structural Rigidity</div>
+                <div class="item-body">Reinforced frame for field durability and payload stability.</div>
+              </li>
+              <li>
+                <div class="item-title">Advanced Sensor Suite</div>
+                <div class="item-body">Upgraded LiDAR, TOF, and IMU integration for accurate real-world mapping.</div>
+              </li>
+              <li>
+                <div class="item-title">AI-Driven Control</div>
+                <div class="item-body">Intelligent mode selection, stabilization, and navigation pipeline.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Applications</h3>
+            <ul>
+              <li>
+                <div class="item-title">Search &amp; Rescue</div>
+                <div class="item-body">Access hard-to-reach zones through combined flight and ground mobility.</div>
+              </li>
+              <li>
+                <div class="item-title">Defense &amp; Surveillance</div>
+                <div class="item-body">Stealth movement, low-altitude reconnaissance, and terrain-adaptive deployment.
+                </div>
+              </li>
+              <li>
+                <div class="item-title">Industrial Inspection</div>
+                <div class="item-body">Hybrid access to rooftops, tight corridors, and complex structures.</div>
+              </li>
+              <li>
+                <div class="item-title">R&amp;D Platform</div>
+                <div class="item-body">Modular architecture ideal for experimental robotics and AI testing.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="product-closing">Morph-BT represents the future direction of Verham Robotics — compact, intelligent,
+          and mission-ready hybrid systems.</p>
+      </div>
+
+      <!-- Product navigation section -->
+      <product-navigation-component></product-navigation-component>
+
+    </section>
   </main>
 
   <footer-component></footer-component>

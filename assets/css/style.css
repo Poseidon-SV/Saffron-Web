@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # Simplified Color Palette - Verham Robotics
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 :root {
   /* PRIMARY BRAND COLORS */
   --primary-orange: #ed662d;
@@ -62,7 +66,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Oxanium", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -147,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #topbar {
   background: var(--bg-dark);
-  font-size: 15px;
+  font-size: 14px;
   height: 40px;
   padding: 0;
   color: var(--white-60);
@@ -217,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 71px;
+  max-height: 67px;
 }
 
 .scrolled-offset {
@@ -271,6 +275,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .active:focus,
 .navbar li:hover > a {
   background: var(--primary-orange);
+}
+
+.profile-nav-link:hover,
+.profile-nav-link:focus-visible {
+  color: #fff !important;
 }
 
 .navbar .dropdown ul {
@@ -396,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--text-white);
 }
 
@@ -568,6 +577,7 @@ section {
   z-index: 1;
   font-weight: 700;
   font-size: 49px;
+  font-family: "Oxanium", sans-serif;
   text-transform: uppercase;
   line-height: 0;
 }
@@ -626,6 +636,14 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Founder
+--------------------------------------------------------------*/
+.founder {
+  border-top: 1px solid var(--border-dark);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+/*--------------------------------------------------------------
 # Vision
 --------------------------------------------------------------*/
 .vision {
@@ -643,6 +661,7 @@ section {
   font-size: 28px;
   font-weight: 700;
   color: var(--primary-orange);
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .vision .box h4 {
@@ -655,7 +674,7 @@ section {
 
 .vision .box p {
   color: var(--text-gray-medium);
-  font-size: 15px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
@@ -702,7 +721,7 @@ section {
 
 .partners .box p {
   color: var(--text-gray-medium);
-  font-size: 15px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
@@ -752,16 +771,21 @@ section {
   text-decoration: none;
   color: inherit;
   width: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
 }
 
 .product-card {
   position: relative;
   width: 100%;
-  min-height: 420px;
-  border-radius: 24px;
+  /* min-height: 420px; */
+  /* border-radius: 24px; */
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 10px 20px var(--shadow-orange);
+  box-shadow: 0px 0px 10px 2px var(--shadow-orange);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -770,7 +794,7 @@ section {
   box-shadow: 0 20px 30px var(--primary-orange-hover);
 }
 
-.product-card .bg-video {
+/* .product-card .bg-video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -780,7 +804,7 @@ section {
   transform: translate(-50%, -50%);
   z-index: 1;
   opacity: 0.4;
-}
+} */
 
 .product-card .card-overlay {
   position: absolute;
@@ -797,15 +821,16 @@ section {
 .product-card .card-content {
   position: relative;
   z-index: 3;
-  padding: 24px;
+  /* padding: 24px; */
+  padding: 30px 30px; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   height: 100%;
   text-shadow: var(--bg-black) 0px 0px 20px;
 }
 
-.product-card h2 {
+/* .product-card h2 {
   color: var(--primary-orange);
   margin-bottom: 10px;
   font-weight: bold;
@@ -816,14 +841,83 @@ section {
   font-size: 16px;
   margin-bottom: 8px;
 }
-
+ */
 .product-card .learn-more {
-  margin-top: auto;
-  font-size: 24px;
+  margin-top: 5%;
+  font-size: 18px;
   font-weight: bolder;
-  color: var(--primary-orange-hover);
-  text-decoration: underline;
-  text-shadow: var(--bg-black) 0px 0px 50px;
+  text-shadow: var(--text-gray-dark) 0px 0px 7px;
+}
+
+/* Status */
+.card-status {
+  color: var(--primary-orange);;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+}
+
+/* Title */
+.product-card h2 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 18px 0;
+}
+
+/* Description */
+.card-description {
+  color: #b8c7d8;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Divider */
+.card-divider {
+  height: 1px;
+  background: var(--shadow-orange);
+  margin: 2px 0 20px;
+}
+
+/* Specs */
+.card-specs p {
+  color: #b8c7d8;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 0 7px;
+}
+
+.card-specs strong {
+  color: var(--primary-orange);;
+  font-weight: 500;
+}
+
+/* Full specs */
+.learn-more {
+  display: inline-block;
+  margin-top: 20px;
+
+  color: var(--primary-orange);;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  transition: all 0.3s ease;
+}
+
+.learn-more span {
+  margin-left: 5px;
+  transition: margin-left 0.3s ease;
+}
+
+.product-card:hover .learn-more {
+  color: #ffffff;
+}
+
+.product-card:hover .learn-more span {
+  margin-left: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -864,6 +958,139 @@ section {
   border: 2px solid var(--primary-orange);
 }
 
+
+/*--------------------------------------------------------------
+# Projects Section
+--------------------------------------------------------------*/
+.projects-section {
+  padding: 80px 0;
+  background: var(--overlay-dark);
+}
+
+.projects-section .container {
+  max-width: 1400px;
+}
+
+/* Header */
+
+.projects-header {
+  max-width: 1050px;
+  margin-bottom: 42px;
+}
+
+.projects-header > span {
+  display: block;
+  margin-bottom: 22px;
+
+  color: var(--primary-orange);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.projects-header h2 {
+  margin: 0 0 22px;
+
+  color: var(--text-light);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.projects-header p {
+  margin: 0;
+
+  color: var(--text-gray-medium);
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 1050px;
+}
+
+/* Projects Grid */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Individual Project */
+
+.project-item {
+  min-height: 68px;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  background: var(--bg-dark);
+  border: 1px solid  var(--shadow-orange);
+  border-radius: 5px;
+
+  color:  var(--text-gray-medium);
+  font-size: 16px;
+  font-weight: 400;
+
+  transition: all 0.25s ease;
+}
+
+/* Blue Bullet */
+
+.project-bullet {
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+
+  background: var(--primary-orange);
+  border-radius: 50%;
+}
+
+/* Hover */
+
+.project-item:hover {
+  border-color: var(--border-orange);
+  background: var(--border-dark);
+  transform: translateY(-1px);
+}
+
+/* ======= Responsive ======= */
+
+@media (max-width: 991px) {
+
+  .projects-header h2 {
+    font-size: 32px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .projects-section {
+    padding: 60px 20px;
+  }
+
+  .projects-header h2 {
+    font-size: 28px;
+  }
+
+  .projects-header p {
+    font-size: 15px;
+  }
+
+  .project-item {
+    min-height: 62px;
+    padding: 15px 18px;
+    font-size: 14px;
+  }
+
+}
+
 /*--------------------------------------------------------------
 # Product Details
 --------------------------------------------------------------*/
@@ -874,98 +1101,323 @@ section {
 }
 
 .product-details {
-  padding-top: 40px;
+  background: var(--bg-black);
+  color: var(--text-white);
+  font-family: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
 }
 
-.product-details ul {
-  margin-top: 0px;
-}
-
-.product-details h3 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.product-details h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.product-details video {
-  width: 100%;
+.product-details,
+.product-details * {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+.product-details .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+/* ==============================
+    Hero
+    ============================== */
+
+.product-details .product-details-slider {
+  border: 2px solid var(--border-dark);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-black);
+}
+
+.product-details .product-details-slider video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.product-details-slider img {
+  width: 100%;
   border-radius: 25px;
 }
 
-.product-details .product-details-slider img {
-  width: 100%;
-}
-
-.product-details .product-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.product-details .product-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: var(--text-white);
-  opacity: 1;
-  border: 1px solid var(--primary-orange);
-}
-
-.product-details .product-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--primary-orange);
-}
-
-.product-details .product-info {
-  padding: 30px;
-  box-shadow: 0px 0 20px var(--shadow-orange);
-}
-
-.product-details .product-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--text-light);
-}
-
-.product-details .product-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.product-details .product-info ul li + li {
-  margin-top: 10px;
-}
-
-.product-details .product-description {
-  padding-top: 30px;
+.product-details .product-description .product-label {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--primary-orange);
 }
 
 .product-details .product-description h2 {
-  font-size: 26px;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 42px;
   font-weight: 700;
-  margin-bottom: 20px;
+  line-height: 1.1;
+  margin-top: 14px;
+  margin-bottom: 0;
+  color: var(--text-white);
+}
+
+.product-details .product-description .product-status {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 6px 14px;
+
+  border: 1px solid var(--border-orange);
+  border-radius: 3px;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  color: var(--primary-orange);
+}
+
+.product-details .product-description .product-lede {
+  margin-top: 24px;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--text-gray-medium);
+}
+
+/* ==============================
+    Product Information
+    ============================== */
+
+.product-details .product-info {
+  margin-top: 72px;
+  padding: 0;
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+  background: var(--bg-dark);
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.product-details .product-info .product-info-row {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 12px;
+  padding: 18px 28px;
+}
+
+.product-details .product-info .product-info-row + .product-info-row {
+  border-top: 1px solid var(--border-dark);
+}
+
+.product-details .product-info .product-info-label {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--primary-orange);
+  padding-top: 3px;
+}
+
+.product-details .product-info .product-info-value {
+  font-size: 14.5px;
+  color: var(--text-gray-medium);
+}
+
+/* ==============================
+    Key Features + Applications
+    ============================== */
+
+.product-details .product-description.details-section {
+  margin-top: 72px;
+  padding: 72px;
+  border-top: 1px solid var(--border-dark);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
 }
 
 .product-details .product-description h3 {
-  font-size: 22px;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 24px;
   font-weight: 600;
+  color: var(--text-white);
 }
 
-.product-details .product-description p {
+.product-details .product-description ul {
+  list-style: none;
+  margin-top: 26px;
   padding: 0;
 }
+
+.product-details .product-description ul li {
+  padding: 14px 0;
+  border-top: 1px solid var(--border-dark);
+}
+
+.product-details .product-description ul li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.product-details .product-description .item-title {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.product-details .product-description .item-body {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-gray-medium);
+}
+
+
+/* ==============================
+    Closing Statement
+    ============================== */
+
+.product-details .product-closing {
+  border-top: 1px solid var(--border-dark);
+  border-bottom: 1px solid var(--border-dark);
+
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 21px;
+  line-height: 1.5;
+
+  color: var(--text-white);
+}
+
+
+/* ==============================
+    Product Navigation
+    ============================== */
+
+.product-navigation{max-width:1140px;margin:0 auto;padding:34px 20px;font-family:"IBM Plex Sans",sans-serif;background:var(--bg-black)}
+.product-navigation-closing{max-width:620px;font-family:"Space Grotesk",sans-serif;font-size:22px;font-weight:500;line-height:1.35;color:var(--text-white);margin:0}
+.product-navigation-grid{margin-top:5px;display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:768px){.product-navigation-grid{grid-template-columns:1fr 1fr}}
+.product-navigation-card{display:block;padding:24px;background:var(--bg-dark);border:1px solid var(--border-dark);border-radius:6px;text-decoration:none;transition:border-color .2s ease}
+.product-navigation-card:hover{border-color:var(--primary-orange)}
+.product-navigation-status{display:block;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--primary-orange)}
+.product-navigation-name{margin:8px 0 0;font-family:"Space Grotesk",sans-serif;font-size:19px;font-weight:600;color:var(--text-white);transition:color .2s ease}
+.product-navigation-card:hover .product-navigation-name{color:var(--primary-orange)}
+.product-navigation-tagline{margin:8px 0 0;font-size:14px;line-height:1.55;color:var(--text-gray-medium)}
+
+
+/* ==============================
+    Responsive
+    ============================== */
+
+@media (max-width: 900px) {
+
+  .product-details .product-info .product-info-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .product-details .product-description.details-section {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .product-details .product-description h2 {
+    font-size: 32px;
+  }
+
+  .product-details .container {
+    padding: 56px 20px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Careers
 --------------------------------------------------------------*/
-.careers {
-  padding: 50px
+.vr-careers {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+.vr-careers * {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.vr-careers .wrap {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 5rem 1.25rem;
+}
+
+.vr-careers .label {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--primary-orange);
+}
+
+.vr-careers .intro {
+  margin-top: 1.25rem;
+  max-width: 48rem;
+  color: var(--text-gray-medium);
+}
+
+.vr-careers .grid {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.vr-careers .card {
+  border-radius: 6px;
+  border: 1px solid var(--border-orange);
+  background: var(--bg-dark);
+  padding: 2.25rem;
+}
+
+.vr-careers .card h3 {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.vr-careers .card p {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: var(--text-gray-medium);
+}
+
+.vr-careers .note {
+  margin-top: 2.5rem;
+  font-size: 0.875rem;
+  color: var(--text-gray-medium);
+}
+
+.vr-careers .cta {
+  display: inline-block;
+  margin-top: 1.75rem;
+  border-radius: 2px;
+  background: var(--primary-orange);
+  color: var(--bg-black);
+  padding: 0.75rem 1.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.vr-careers .cta:hover {
+  background: var(--primary-orange-hover);
+  color: var(--text-white);
 }
 
 /*--------------------------------------------------------------
@@ -1132,6 +1584,7 @@ section {
   padding: 0 0 30px 0;
   color: var(--text-white);
   font-size: 14px;
+  border-top: 1px solid var(--border-dark);
 }
 
 #footer .footer-top {
@@ -1143,9 +1596,9 @@ section {
   margin-bottom: 15px;
   background: var(--bg-dark);
   color: var(--text-white);
-  border-top: 4px solid var(--primary-orange);
+  /* border-top: 4px solid var(--primary-orange); */
   text-align: center;
-  padding: 30px 20px;
+  /* padding: 30px 20px; */
 }
 
 #footer .footer-top .footer-info h3 {

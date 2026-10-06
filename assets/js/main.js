@@ -1,4 +1,4 @@
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -111,7 +111,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -120,7 +120,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -130,7 +130,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -178,9 +178,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -188,7 +188,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -237,70 +237,43 @@
    */
   const btns = document.querySelectorAll(".faq-btn");
 
-function faqFunc() {
-  this.classList.toggle("is-open");
+  function faqFunc() {
+    this.classList.toggle("is-open");
 
-  const content = this.nextElementSibling;
+    const content = this.nextElementSibling;
 
-  if (content.style.maxHeight) content.style.maxHeight = null;
-  else content.style.maxHeight = content.scrollHeight + "px";
-}
-btns.forEach((el) => el.addEventListener("click", faqFunc));
-
-
-class Topbar extends HTMLElement {
-  constructor() {
-    super();
+    if (content.style.maxHeight) content.style.maxHeight = null;
+    else content.style.maxHeight = content.scrollHeight + "px";
   }
-  connectedCallback() {
-    this.innerHTML = `
-  
-    <!-- ======= Top Bar ======= -->
-    <section id="topbar" class="d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope-fill"></i><a href="mailto:20shubh01@gmail.com">20shubh01@gmail.com</a>
-          <i class="bi bi-phone-fill phone-icon"></i><a>+91 9212172636</a>
-        </div>
-        <div class="social-links d-none d-md-block">
-        <a href="https://github.com/Poseidon-SV" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/shubham-verma-72b52a217/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://instagram.com/20shubh01?igshid=MzMyNGUyNmU2YQ==" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-        </div>
-      </div>
-    </section>   
-   `;
-}
-}
+  btns.forEach((el) => el.addEventListener("click", faqFunc));
 
-customElements.define('topbar-component', Topbar);
 
-  class Breadcrumbs extends HTMLElement {
+  class Topbar extends HTMLElement {
     constructor() {
       super();
     }
     connectedCallback() {
       this.innerHTML = `
-  <main id="main">
   
-  <!-- ======= Breadcrumbs ======= -->
-  <section id="breadcrumbs" class="breadcrumbs">
-    <div class="container">
-  
-      <ol>
-        <li><a href="index.html">Home</a></li>
-        <li>Portfolio Details</li>
-      </ol>
-      <h2>Portfolio Details</h2>
-  
-    </div>
-  </section><!-- End Breadcrumbs -->
-
-    `;
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope-fill"></i><a href="mailto:contact@verhamrobotics.com">contact@verhamrobotics.com</a>
+          <i class="bi bi-phone-fill phone-icon"></i><a>+91 9212172636</a>
+        </div>
+        <div class="social-links d-none d-md-block">
+        <a href="https://github.com/Poseidon-SV" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/shubham-verma-vmr/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://instagram.com/20shubh01?igshid=MzMyNGUyNmU2YQ==" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </section>   
+   `;
+    }
   }
-}
 
-customElements.define('breadcrumbs-component', Breadcrumbs);
+  customElements.define('topbar-component', Topbar);
 
 })()
 

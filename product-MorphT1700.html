@@ -15,114 +15,113 @@
 
 <body>
 
-  <topbar-component></topbar-component>
+  <section id="topbar">
+    <topbar-component></topbar-component>
+  </section>
 
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo"><img src="assets/img/verham-logo.png" alt="" class="img-fluid"></a>
-
+      <div class="d-flex align-items-center">
+        <a href="index.html" class="logo"><img src="assets/img/verham-logo.png" alt="" class="img-fluid"></a>
+        </div>
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#vision">Vision</a></li>
-          <li><a class="nav-link scrollto active" href="index.html#products">Products</a></li>
-          <li><a class="nav-link scrollto" href="index.html#projects">Projects</a></li>
-          <li><a class="nav-link scrollto" href="index.html#partners">Partners</a></li>
-          <li><a class="nav-link scrollto" href="index.html#careers">Careers</a></li>
-          <li><a class="nav-link scrollto" href="service-3DPrinting.html">3D Printing</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <header-component></header-component>
       </nav>
-
     </div>
   </header>
 
   <main id="main">
-
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Product Details - Morph T-1700</li>
-        </ol>
-        <h2>Morph T-1700</h2>
-
-      </div>
-    </section>
-
     <section id="product-details" class="product-details">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="product-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div>
-                  <video src="assets/vid/Morph_T-1700.mp4"
-                    autoplay loop muted playsinline></video>
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-7" style="padding:1%">
+            <div class="product-details-slider">
+              <video src="assets/vid/Morph_T-1700.mp4" autoplay loop muted playsinline></video>
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="product-info">
-              <h3>Morph T-1700</h3>
-              <ul>
-                <li><strong>Category</strong>: Transformable Robotics</li>
-                <li><strong>Status</strong>: Completed Prototype</li>
-                <li><strong>Generation</strong>: First-Gen Morph Platform</li>
-              </ul>
-            </div>
-
+          <div class="col-lg-5">
             <div class="product-description">
-              <p>
-                Morph T-1700 is the first functional version of Verham’s multi-mode robotic platform. It established the
-                foundational architecture for hybrid aerial-ground mobility, proving the feasibility of the
-                transformation
-                system and validating real-world control pipelines.
-              </p>
-
+              <p class="product-label">Transformable Robotics</p>
+              <h2>Morph T-1700</h2>
+              <span class="product-status">Completed Prototype</span>
+              <p class="product-lede">Morph T-1700 is the first functional version of Verham&rsquo;s multi-mode robotic
+                platform. It established the foundational architecture for hybrid aerial-ground mobility, proving the
+                feasibility of the transformation system and validating real-world control pipelines.</p>
             </div>
           </div>
-          <div>
-            <div>
-              <h3>Key Features</h3>
-              <ol>
-                <li><strong>Dual-Mode Robot:</strong> Operates as a ground rover and a fully capable flying drone.</li>
-                <li><strong>Core Transformation System:</strong> Original mechanical layout enabling rapid switching.
-                </li>
-                <li><strong>Integrated Flight & Ground Control:</strong> FC + MC hybrid control pipeline.
-                </li>
-                <li><strong>Active Sensor Mapping:</strong> Multi-sensor integration for avoidance and guidance.</li>
-                <li><strong>Modular Frame:</strong> Adaptable chassis for upgrades and variants like the T-1280 SM.</li>
-              </ol>
-
-              <h3>Applications</h3>
-              <ul>
-                <li><strong>R&D Validation:</strong> Core experimental platform for all Morph series developments.</li>
-                <li><strong>Education & Research:</strong> Demonstrates hybrid locomotion and autonomous control.</li>
-                <li><strong>Tech Demonstrations:</strong> First public-ready model showcasing Morph capabilities.</li>
-                <li><strong>Prototyping Base:</strong> Foundation for T-1700 and lighter SM variant.</li>
-              </ul>
-
-              Morph T-1700 is where the Morph journey began - the platform that proved hybrid mobility can be compact
-              and
-              practical.
-            </div>
-          </div>
-
         </div>
-    </section>
 
+        <div class="product-info" aria-label="Product information">
+          <div class="product-info-row">
+            <div class="product-info-label">Category</div>
+            <div class="product-info-value">Transformable Robotics</div>
+          </div>
+          <div class="product-info-row">
+            <div class="product-info-label">Status</div>
+            <div class="product-info-value">Completed Prototype</div>
+          </div>
+          <div class="product-info-row">
+            <div class="product-info-label">Generation</div>
+            <div class="product-info-value">First-Gen Morph Platform</div>
+          </div>
+        </div>
+
+        <div class="product-description details-section">
+          <div>
+            <h3>Key Features</h3>
+            <ul>
+              <li>
+                <div class="item-title">Core Transformation System</div>
+                <div class="item-body">Original mechanical layout enabling rapid switching between aerial and ground
+                  mobility.</div>
+              </li>
+              <li>
+                <div class="item-title">Integrated Flight &amp; Ground Control</div>
+                <div class="item-body">FC + MC hybrid control pipeline for coordinated aerial and terrestrial operation.
+                </div>
+              </li>
+              <li>
+                <div class="item-title">Active Sensor Mapping</div>
+                <div class="item-body">Multi-sensor integration for obstacle avoidance and guidance.</div>
+              </li>
+              <li>
+                <div class="item-title">Modular Frame</div>
+                <div class="item-body">Adaptable chassis supporting further upgrades and Morph platform variants.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Applications</h3>
+            <ul>
+              <li>
+                <div class="item-title">R&amp;D Validation</div>
+                <div class="item-body">Core experimental platform for Morph series development.</div>
+              </li>
+              <li>
+                <div class="item-title">Education &amp; Research</div>
+                <div class="item-body">Demonstrates hybrid locomotion, transformation mechanics, and robotic control.
+                </div>
+              </li>
+              <li>
+                <div class="item-title">Technology Demonstrations</div>
+                <div class="item-body">Demonstrates the core Morph concept and hybrid mobility capabilities.</div>
+              </li>
+              <li>
+                <div class="item-title">Prototyping Platform</div>
+                <div class="item-body">Foundation for subsequent Morph platform development and variants.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="product-closing">Morph T-1700 is where the Morph journey began; the platform that proved hybrid
+          mobility can be compact and practical.</p>
+      </div>
+
+      <product-navigation-component></product-navigation-component>
+    </section>
   </main>
 
   <footer-component></footer-component>
